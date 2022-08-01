@@ -7,7 +7,7 @@ import modules.selectAds as ads
 import modules.ageAndGender as  redefine 
 from collections import Counter
 
-loaded_model = pickle.load(open("finalized_model.sav", 'rb'))
+loaded_model = pickle.load(open("./model/finalized_model.sav", 'rb'))
 
 
 faceProto = "opencv_face_detector.pbtxt"

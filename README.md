@@ -1,1 +1,1 @@
-# ai_base_targeted-adverticing_system
+# ai_base_targeted-advertising_system
