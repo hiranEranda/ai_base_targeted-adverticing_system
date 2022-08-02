@@ -15,7 +15,7 @@ def selectAdds(argument):
         13: ["./ads/male-12-1.mp4","./ads/female-11-1"],
         14: "an ad appropriate for female between 48-59",
         15: "an ad appropriate for female over 60",
-        15: "an ad appropriate for male over 60",
+        16: "an ad appropriate for male over 60",
     }
  
     return switcher.get(argument, "nothing")
