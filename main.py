@@ -1,13 +1,14 @@
 from re import X
 import cv2
 import pickle
+import random
 import time
 import modules.videoPlayer as player   
 import modules.selectAds as ads   
 import modules.ageAndGender as  redefine 
 from collections import Counter
 
-loaded_model = pickle.load(open("./model/finalized_model.sav", 'rb'))
+loaded_model = pickle.load(open("./model/finalized_model_randomForest.sav", 'rb'))
 
 
 faceProto = "opencv_face_detector.pbtxt"
@@ -101,5 +102,6 @@ while True:
     cv2.destroyAllWindows()
     maxPredictions = Counter(vals).most_common(1)[0][0]
     ad = ads.selectAdds(maxPredictions)
-    player.videoPlayer(ad)
+    print(random.choice(ad))
+    player.videoPlayer(random.choice(ad))
 
